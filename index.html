@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 DDoS Panel 🔥</h1>
+
+        <h2>owner: @claireef</h2>
+        
+        <label>🌍 Target (IP/Website)</label>
+        <input type="text" id="target" placeholder="Contoh: example.com">
+        
+        <label>🔌 Port</label>
+        <input type="number" id="port" placeholder="Contoh: 443">
+        
+        <label>⏳ Duration (seconds)</label>
+        <input type="number" id="duration" placeholder="Contoh: 60">
+        
+        <label>⚡ Select Methods</label>
+        <select id="method">
+            <option value="raw">RAW</option>
+            <option value="tls">TLS</option>
+            <option value="flood">Flood</option>
+            <option value="h2-fast">H2-FAST</option>
+            <option value="h2-mika">H2-MIKA</option>
+            <option value="h2-flood">H2-FLOOD</option>
+            <option value="cc">CC</option>
+            <option value="h2-meris">H2-MERIS</option>
+            <option value="h2-blast">H2-BLAST</option>
+            <option value="h2-hold">H2-HOLD</option>
+            <option value="tcp">TCP</option>
+            <option value="udp">UDP</option>
+            <option value="tcp-pps">TCP-PPS</option>
+        </select>
+
+        <button class="attack-btn" onclick="startAttack()">🚀 Start Attack</button>
+
+        <h3></h3>
+        <ul id="attackLog"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
